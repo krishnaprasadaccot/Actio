@@ -1,0 +1,9 @@
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Common\bin\Debug\netstandard2.0\Actio.Common.deps.json
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Common\bin\Debug\netstandard2.0\Actio.Common.dll
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Common\bin\Debug\netstandard2.0\Actio.Common.pdb
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Common\obj\Debug\netstandard2.0\Actio.Common.csprojAssemblyReference.cache
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Common\obj\Debug\netstandard2.0\Actio.Common.csproj.CoreCompileInputs.cache
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Common\obj\Debug\netstandard2.0\Actio.Common.AssemblyInfoInputs.cache
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Common\obj\Debug\netstandard2.0\Actio.Common.AssemblyInfo.cs
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Common\obj\Debug\netstandard2.0\Actio.Common.dll
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Common\obj\Debug\netstandard2.0\Actio.Common.pdb

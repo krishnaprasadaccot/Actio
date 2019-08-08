@@ -1,0 +1,17 @@
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Services.Identity.deps.json
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Services.Identity.runtimeconfig.json
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Services.Identity.runtimeconfig.dev.json
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Services.Identity.dll
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Services.Identity.pdb
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Common.dll
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\bin\Debug\netcoreapp2.2\Actio.Common.pdb
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.csprojAssemblyReference.cache
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.csproj.CoreCompileInputs.cache
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.RazorAssemblyInfo.cache
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.RazorAssemblyInfo.cs
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.AssemblyInfoInputs.cache
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.AssemblyInfo.cs
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.RazorTargetAssemblyInfo.cache
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.csproj.CopyComplete
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.dll
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Identity\obj\Debug\netcoreapp2.2\Actio.Services.Identity.pdb
