@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj": {}
+    "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj": {
+    "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj",
+        "projectUniqueName": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj",
         "projectName": "Actio.Common",
-        "projectPath": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj",
+        "projectPath": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj",
         "packagesPath": "C:\\Users\\v-kracco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\obj\\",
+        "outputPath": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,11 +41,23 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "RawRabbit": {
+              "target": "Package",
+              "version": "[2.0.0-beta8, )"
             }
           },
           "imports": [
@@ -56,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj": {
+    "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj",
+        "projectUniqueName": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj",
         "projectName": "Actio.Services.Activities",
-        "projectPath": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj",
+        "projectPath": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj",
         "packagesPath": "C:\\Users\\v-kracco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\obj\\",
+        "outputPath": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -82,8 +94,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj": {
-                "projectPath": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj"
+              "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj": {
+                "projectPath": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj"
               }
             }
           }
