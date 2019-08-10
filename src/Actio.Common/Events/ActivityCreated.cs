@@ -2,7 +2,7 @@ using System;
 
 namespace Actio.Common.Events
 {
-    class ActivityCreated : IAuthenticatedEvent
+    public class ActivityCreated : IAuthenticatedEvent
     {
         public Guid Id { get; }
         public Guid UserId { get; }
@@ -15,11 +15,12 @@ namespace Actio.Common.Events
         {
 
         }
-        public ActivityCreated(Guid id, Guid userId, string category)
+        public ActivityCreated(Guid id, Guid userId, string category,string name)
         {
             Id = id;
             UserId = userId;
             Category = category;
+            Name = name;
         }
     }
 }

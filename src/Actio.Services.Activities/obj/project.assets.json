@@ -2800,6 +2800,46 @@
           "lib/netstandard1.5/RawRabbit.dll": {}
         }
       },
+      "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "1.0.2",
+          "NETStandard.Library": "1.6.1",
+          "RawRabbit": "2.0.0-beta8"
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll": {}
+        }
+      },
+      "RawRabbit.Operations.Publish/2.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "RawRabbit": "2.0.0-beta8"
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.Operations.Publish.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.Operations.Publish.dll": {}
+        }
+      },
+      "RawRabbit.Operations.Subscribe/2.0.0-beta8": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "RawRabbit": "2.0.0-beta8"
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.Operations.Subscribe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.Operations.Subscribe.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -4628,7 +4668,10 @@
         "dependencies": {
           "Microsoft.AspNetCore": "2.2.0",
           "Microsoft.AspNetCore.Hosting": "2.2.0",
-          "RawRabbit": "2.0.0-beta8"
+          "RawRabbit": "2.0.0-beta8",
+          "RawRabbit.DependencyInjection.ServiceCollection": "2.0.0-beta8",
+          "RawRabbit.Operations.Publish": "2.0.0-beta8",
+          "RawRabbit.Operations.Subscribe": "2.0.0-beta8"
         },
         "compile": {
           "bin/placeholder/Actio.Common.dll": {}
@@ -7642,6 +7685,45 @@
         "lib/netstandard1.5/RawRabbit.dll",
         "rawrabbit.2.0.0-beta8.nupkg.sha512",
         "rawrabbit.nuspec"
+      ]
+    },
+    "RawRabbit.DependencyInjection.ServiceCollection/2.0.0-beta8": {
+      "sha512": "1Ol7ThyJjqIUDTGuPXPTgNype6lCiy8IGp8Hqh/PUWZPYpYEnNip92BFAGsey9QoCfqw8nzPdW1/jk+Ic01BAg==",
+      "type": "package",
+      "path": "rawrabbit.dependencyinjection.servicecollection/2.0.0-beta8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RawRabbit.DependencyInjection.ServiceCollection.dll",
+        "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll",
+        "rawrabbit.dependencyinjection.servicecollection.2.0.0-beta8.nupkg.sha512",
+        "rawrabbit.dependencyinjection.servicecollection.nuspec"
+      ]
+    },
+    "RawRabbit.Operations.Publish/2.0.0-beta8": {
+      "sha512": "AE4amKO8dI276sFiWJb5nu8Y2raACZW40qZtub9bOZe34Noe32KL3AI6hs4pTkbEVwh/Bjo/f9uhHj7gjiOzig==",
+      "type": "package",
+      "path": "rawrabbit.operations.publish/2.0.0-beta8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RawRabbit.Operations.Publish.dll",
+        "lib/netstandard1.5/RawRabbit.Operations.Publish.dll",
+        "rawrabbit.operations.publish.2.0.0-beta8.nupkg.sha512",
+        "rawrabbit.operations.publish.nuspec"
+      ]
+    },
+    "RawRabbit.Operations.Subscribe/2.0.0-beta8": {
+      "sha512": "S7LJAH1fOOupMUwVH1n7jDHbpbbw3obLaRU6wFDzBtLuQ6CZOP/VcECDjnQmOlMYY4CY1WkNOF1+5OJBt+3UDA==",
+      "type": "package",
+      "path": "rawrabbit.operations.subscribe/2.0.0-beta8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RawRabbit.Operations.Subscribe.dll",
+        "lib/netstandard1.5/RawRabbit.Operations.Subscribe.dll",
+        "rawrabbit.operations.subscribe.2.0.0-beta8.nupkg.sha512",
+        "rawrabbit.operations.subscribe.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -12612,11 +12694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj",
+      "projectUniqueName": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj",
       "projectName": "Actio.Services.Activities",
-      "projectPath": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj",
+      "projectPath": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\Actio.Services.Activities.csproj",
       "packagesPath": "C:\\Users\\v-kracco\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\obj\\",
+      "outputPath": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Services.Activities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12635,8 +12717,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj": {
-              "projectPath": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj"
+            "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj": {
+              "projectPath": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj"
             }
           }
         }

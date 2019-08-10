@@ -9,7 +9,7 @@ using RawRabbit;
 
 namespace Actio.Common.Services
 {
-    class ServiceHost : IServiceHost
+    public class ServiceHost : IServiceHost
     {
         private readonly IWebHost _webHost;
 

@@ -19,7 +19,9 @@ namespace Actio.Api.Controllers
         public async Task<IActionResult> Post([FromBody]CreateActivity command)
         {
             command.Id = Guid.NewGuid();
+            command.CreatedAt = DateTime.UtcNow;
             await _busClient.PublishAsync(command);
+
             return Accepted($"activities/{command.Id}");
         }
     }
