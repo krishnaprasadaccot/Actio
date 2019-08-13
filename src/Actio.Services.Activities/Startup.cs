@@ -4,8 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Actio.Common.Commands;
 using Actio.Common.Events;
+using Actio.Common.Mongo;
 using Actio.Common.RabbitMq;
+using Actio.Services.Activities.Domain.Repositories;
 using Actio.Services.Activities.Handlers;
+using Actio.Services.Activities.Repositories;
+using Actio.Services.Activities.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -29,9 +33,14 @@ namespace Actio.Services.Activities
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddScoped<ICommandHandler<CreateActivity>, CreateActivityHandler>();
+            services.AddLogging();
+            services.AddMongoDB(Configuration);
             services.AddRabbitMq(Configuration);
-            
+            services.AddTransient<ICommandHandler<CreateActivity>, CreateActivityHandler>();
+            services.AddTransient<IActivityRepository, ActivityRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IDatabaseSeeder, CustomMongoSeeder>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,9 +50,10 @@ namespace Actio.Services.Activities
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
 
             //app.UseHttpsRedirection();
+            app.ApplicationServices.GetService<IDatabaseInitializer>().InitializeAsync();
             app.UseMvc();
         }
     }

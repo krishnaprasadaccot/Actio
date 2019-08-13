@@ -73,7 +73,8 @@ namespace Actio.Common.Services
 
             public BusBuilder SubscribeToCommand<TCommand>() where TCommand : ICommand
             {
-                var handler = (ICommandHandler<TCommand>)_webhost.Services.GetService(typeof(ICommandHandler<TCommand>));
+                var handler = (ICommandHandler<TCommand>)_webhost.Services
+                .GetService(typeof(ICommandHandler<TCommand>));
                 _bus.WithCommandHandlerAsync(handler);
                 return this;
             }
@@ -86,7 +87,7 @@ namespace Actio.Common.Services
             }
             public override ServiceHost Build()
             {
-                throw new NotImplementedException();
+                return new ServiceHost(_webhost);
             }
         }
     }

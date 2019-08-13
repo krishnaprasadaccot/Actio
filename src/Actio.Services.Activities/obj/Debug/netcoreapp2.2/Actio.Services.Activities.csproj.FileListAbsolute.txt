@@ -1,9 +1,9 @@
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.dll
+C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Common.dll
 C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.deps.json
 C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.runtimeconfig.json
 C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.runtimeconfig.dev.json
-C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.dll
 C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Services.Activities.pdb
-C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Common.dll
 C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\bin\Debug\netcoreapp2.2\Actio.Common.pdb
 C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.csprojAssemblyReference.cache
 C:\Users\v-kracco\source\repos\Actio\src\Actio.Services.Activities\obj\Debug\netcoreapp2.2\Actio.Services.Activities.csproj.CoreCompileInputs.cache
