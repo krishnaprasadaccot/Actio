@@ -40,6 +40,7 @@ namespace Actio.Services.Activities
             services.AddTransient<IActivityRepository, ActivityRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IDatabaseSeeder, CustomMongoSeeder>();
+            services.AddTransient<IActivityService, ActivityService>();
 
         }
 
