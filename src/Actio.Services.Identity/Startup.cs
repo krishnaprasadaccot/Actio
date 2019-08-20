@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Actio.Common.Auth;
 using Actio.Common.Commands;
 using Actio.Common.Mongo;
 using Actio.Common.RabbitMq;
@@ -35,6 +36,7 @@ namespace Actio.Services.Identity
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddMongoDB(Configuration);
             services.AddRabbitMq(Configuration);
+            services.AddJwt(Configuration);
             services.AddTransient<ICommandHandler<CreateUser>, CreateUserHandler>();
             services.AddTransient<IEncrypter, Encrypter>();
             services.AddTransient<IUserRepository, UserRepository>();
@@ -54,7 +56,7 @@ namespace Actio.Services.Identity
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.ApplicationServices.GetService<IDatabaseInitializer>().InitializeAsync();
             app.UseMvc();
         }

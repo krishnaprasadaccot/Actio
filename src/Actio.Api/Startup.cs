@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Actio.Api.Handlers;
 using Microsoft.Extensions.Options;
+using Actio.Common.Auth;
 
 namespace Actio.Api
 {
@@ -28,8 +29,10 @@ namespace Actio.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddJwt(Configuration);
             services.AddRabbitMq(Configuration);
             services.AddScoped<IEventHandler<ActivityCreated>, ActivityCreatedHandler>();
+            //services.AddScoped<IEventHandler<UserAuthenticated>, UserAuthenticatedHandler>();
 
         }
 
