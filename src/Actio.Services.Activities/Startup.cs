@@ -33,9 +33,9 @@ namespace Actio.Services.Activities
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddLogging();
-            services.AddMongoDB(Configuration);
+            //services.AddLogging();
             services.AddRabbitMq(Configuration);
+            services.AddMongoDB(Configuration);
             services.AddTransient<ICommandHandler<CreateActivity>, CreateActivityHandler>();
             services.AddTransient<IActivityRepository, ActivityRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();

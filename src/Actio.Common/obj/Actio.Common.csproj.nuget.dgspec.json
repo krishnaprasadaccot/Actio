@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj": {}
+    "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj": {}
   },
   "projects": {
-    "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj": {
+    "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj",
+        "projectUniqueName": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj",
         "projectName": "Actio.Common",
-        "projectPath": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj",
+        "projectPath": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\Actio.Common.csproj",
         "packagesPath": "C:\\Users\\v-kracco\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\obj\\",
+        "outputPath": "C:\\Users\\v-kracco\\source\\repos\\Actio\\src\\Actio.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

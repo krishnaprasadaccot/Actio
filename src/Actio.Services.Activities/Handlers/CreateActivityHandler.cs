@@ -17,15 +17,15 @@ namespace Actio.Services.Activities.Handlers
         private readonly IActivityService _activityService;
         private readonly ILogger _logger;
 
-        public CreateActivityHandler(IBusClient busClient, IActivityService activityService,ILogger logger)
+        public CreateActivityHandler(IBusClient busClient, IActivityService activityService)
         {
             _busClient = busClient;
             _activityService = activityService;
-            _logger = logger;
+            
         }
         public async Task HandleAsync(CreateActivity command)
         {
-            _logger.LogInformation($"Creating Activity: {command.Category} {command.Name}");
+            Console.WriteLine($"Creating Activity: {command.Category} {command.Name}");
             try
             {
                 await _activityService.AddAsync(command.Id, command.UserId, command.Category, command.Name, command.Description, command.CreatedAt);
@@ -35,12 +35,12 @@ namespace Actio.Services.Activities.Handlers
             catch (ActioException ex)
             {
                 await _busClient.PublishAsync(new CreatedActivityRejected(command.Id, ex.Code, ex.Message));
-                _logger.LogError(ex.Message);
+                Console.WriteLine(ex.Message);
             }
             catch (Exception ex)
             {
                 await _busClient.PublishAsync(new CreatedActivityRejected(command.Id, "error", ex.Message));
-                _logger.LogError(ex.Message);
+                Console.WriteLine(ex.Message);
             }
         }
     }
