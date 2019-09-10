@@ -14,9 +14,8 @@ namespace Actio.Common.RabbitMq
     {
         public static Task WithCommandHandlerAsync<TCommand>(this IBusClient bus,
             ICommandHandler<TCommand> handler) where TCommand : ICommand
-            => bus.SubscribeAsync<TCommand>(msg =>  handler.HandleAsync(msg), ctx=> ctx.UseSubscribeConfiguration(config => config.FromDeclaredQueue(queue => queue.WithName(GetQueueName<TCommand>()))));
-        //=> bus.SubscribeAsync<TCommand>(msg => handler.HandleAsync(msg),
-        //    ctx => ctx.UseConsumerConfiguration(config => config.FromDeclaredQueue(queue => queue.WithName(GetQueueName<TCommand>()))));
+            => bus.SubscribeAsync<TCommand>(msg =>  handler.HandleAsync(msg), 
+                ctx=> ctx.UseSubscribeConfiguration(config => config.FromDeclaredQueue(queue => queue.WithName(GetQueueName<TCommand>()))));
         public static Task WithEventHandlerAsync<TEvent>(this IBusClient bus,
             IEventHandler<TEvent> handler) where TEvent : IEvent
                 => bus.SubscribeAsync<TEvent>(msg => handler.HandleAsync(msg),

@@ -81,7 +81,7 @@ namespace Actio.Common.Services
 
             public BusBuilder SubscribeToEvent<TEvent>() where TEvent : IEvent
             {
-                var handler = (IEventHandler<IEvent>)_webhost.Services.GetService(typeof(IEventHandler<IEvent>));
+                var handler = (IEventHandler<TEvent>)_webhost.Services.GetService(typeof(IEventHandler<TEvent>));
                 _bus.WithEventHandlerAsync(handler);
                 return this;
             }

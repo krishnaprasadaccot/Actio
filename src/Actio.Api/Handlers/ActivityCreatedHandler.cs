@@ -11,12 +11,10 @@ namespace Actio.Api.Handlers
 
         public ActivityCreatedHandler(IActivityRepository activityRepository)
         {
-            Console.WriteLine("EventHandler--------------------------");
             _activityRepository = activityRepository;
         }
         public async Task HandleAsync(ActivityCreated @event)
         {
-            Console.WriteLine("EventHandler--------------------------");
             await _activityRepository.AddAsync(new Models.Activity {
                 Id=@event.Id,
                 UserId = @event.UserId,
