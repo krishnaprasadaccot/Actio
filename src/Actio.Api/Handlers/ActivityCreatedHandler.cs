@@ -19,7 +19,8 @@ namespace Actio.Api.Handlers
                 Id=@event.Id,
                 UserId = @event.UserId,
                 Name = @event.Name,
-
+                Category = @event.Category,
+                Description = @event.Description
             });
             Console.WriteLine($"Activy Created: {@event.Name}");
         }
